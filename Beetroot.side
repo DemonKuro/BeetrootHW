@@ -1,0 +1,378 @@
+{
+  "id": "db797326-eb73-454d-b5ae-9579905158ba",
+  "version": "2.0",
+  "name": "Beetroot",
+  "url": "https://allo.ua/",
+  "tests": [{
+    "id": "7d35d431-c7c3-43af-957e-f5ada5343a26",
+    "name": "Choosing Laptop by parametrs",
+    "commands": [{
+      "id": "82f030a0-dbe2-4be2-8705-9e66043b9d7c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26e007a9-14c4-4714-a52c-f57a278be5cf",
+      "comment": "",
+      "command": "store",
+      "target": "Ноутбуки",
+      "targets": [],
+      "value": "category"
+    }, {
+      "id": "a00b0d07-9385-4315-9947-cfb2f3c77a5b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//a[contains(.,'${category}, ПК та планшети')]",
+      "targets": [
+        ["linkText=Ноутбуки, ПК та планшети", "linkText"],
+        ["css=.mm__item:nth-child(5) > .mm__a", "css:finder"],
+        ["xpath=//div[@id='js-menu-wrapper']/div/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://allo.ua/ua/planshety-i-gadzhety/')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ноутбуки, ПК та планшети')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "76dd08d3-6bd1-4760-9fcb-6d3193e34826",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//*[@id=\"js-menu-wrapper\"]/div/ul/li[5]/div",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be35a555-0e1a-4102-ae71-f2bdd26a07be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mm__item:nth-child(5) mmc:nth-child(1) > mms:nth-child(3) > .mm__a2",
+      "targets": [
+        ["linkText=Ноутбуки", "linkText"],
+        ["css=.mm__item:nth-child(5) mmc:nth-child(1) > mms:nth-child(3) > .mm__a2", "css:finder"],
+        ["xpath=//a[contains(text(),'Ноутбуки')]", "xpath:link"],
+        ["xpath=//div[@id='js-menu-wrapper']/div/ul/li[5]/div/mmc/mms[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://allo.ua/ua/products/notebooks/')]", "xpath:href"],
+        ["xpath=//li[5]/div/mmc/mms[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64079b4f-aad4-40d9-9abd-81c08143ade8",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1",
+      "targets": [
+        ["css=.v-catalog__title", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Ноутбуки')]", "xpath:innerText"]
+      ],
+      "value": "${category}"
+    }, {
+      "id": "b127cacf-b912-40d7-ab0c-7680652945ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.accordion:nth-child(3) .f-check:nth-child(5)",
+      "targets": [
+        ["css=.accordion:nth-child(3) .f-check:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/div[3]/div/div/aside/section/div[3]/div[2]/div/div/div/a[5]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://allo.ua/ua/products/notebooks/proizvoditel-acer/')])[2]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/div/div/div/a[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d62397a3-f2c5-4d01-a64c-42f4b530ef5b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.accordion:nth-child(5) .f-check:nth-child(6)",
+      "targets": [
+        ["css=.accordion:nth-child(5) .f-check:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/div[2]/div/div/aside/section/div[5]/div[2]/div/div/div/a[6]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://allo.ua/ua/products/notebooks/diapazon_displeya-17/')]", "xpath:href"],
+        ["xpath=//div[5]/div[2]/div/div/div/a[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17903e52-0ec8-4b8a-8935-b8cc14012ce1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.f-popup__message",
+      "targets": [
+        ["css=.f-popup__message", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/div[2]/div/div/aside/div/button/span", "xpath:idRelative"],
+        ["xpath=//aside/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Показати 15 товарiв')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14a885b3-e7dc-418f-9def-b50042a14d6c",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//h1",
+      "targets": [
+        ["css=.v-catalog__title", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Ноутбуки Acer; Діагональ дисплея: 17\" - 17.9\"')]", "xpath:innerText"]
+      ],
+      "value": "${category} Acer; Діагональ дисплея: 17\" - 17.9\""
+    }]
+  }, {
+    "id": "7f780fcb-3de2-4c97-af21-3109a8145f00",
+    "name": "Searching TV",
+    "commands": [{
+      "id": "474848eb-f86e-4189-ac67-2d937fea21c9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1e39efa-d717-438b-898f-43aa73e3e7db",
+      "comment": "",
+      "command": "store",
+      "target": "Телевізори Samsung",
+      "targets": [],
+      "value": "category"
+    }, {
+      "id": "3ad778d9-7d32-41de-b4cd-fe4fe2fb594a",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "css=#search-form__input",
+      "targets": [
+        ["id=search-form__input", "id"],
+        ["name=search", "name"],
+        ["css=#search-form__input", "css:finder"],
+        ["xpath=//input[@id='search-form__input']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/header/div/div[2]/div[3]/form/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b197053d-c2fd-4fb6-bdd7-6f859a4a1d85",
+      "comment": "",
+      "command": "type",
+      "target": "css=#search-form__input",
+      "targets": [
+        ["id=search-form__input", "id"],
+        ["name=search", "name"],
+        ["css=#search-form__input", "css:finder"],
+        ["xpath=//input[@id='search-form__input']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/header/div/div[2]/div[3]/form/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${category}"
+    }, {
+      "id": "2594d255-ec63-498f-b5ed-d3f80bc91b1f",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "xpath=//input[@id='search-form__input']",
+      "targets": [
+        ["id=search-form__input", "id"],
+        ["name=search", "name"],
+        ["css=#search-form__input", "css:finder"],
+        ["xpath=//input[@id='search-form__input']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/header/div/div[2]/div[3]/form/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "ed6a1a37-c03b-4b6e-98d0-fd5d4a884828",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Результати пошуку для 'Телевізори Samsung' – інтернет-магазин ALLO.ua!",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec1c3511-9af0-40d0-98d1-c7b8d8a8c037",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//span[contains(.,'по популярності')]",
+      "targets": [
+        ["css=.sort-by__current", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/div[2]/div/div[2]/div/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'по популярності')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5d16557-83c2-4ae6-a1e0-fcc7e8c8f1bf",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[2]/div/div[2]/div/div/div/div/ul/li",
+      "targets": [
+        ["css=.sort-by__item:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='__layout']/div/div/div[2]/div/div[2]/div/div/div/div/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div/div/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'від дешевих до дорогих')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c08a8b4f-de28-40c2-bdf3-2f51cfce807b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.mh__sr .v-logo__img",
+      "targets": [
+        ["css=.mh__sr .v-logo__img", "css:finder"],
+        ["xpath=//img[@alt='Интернет-Магазин Allo']", "xpath:img"],
+        ["xpath=//div[@id='__layout']/div/header/div/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d46cb91-04c1-47a7-8837-21f408304ac2",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "АЛЛО - національний маркетплейс із найширшим асортиментом",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9104cb7c-87cf-448b-984a-00df49a60f0e",
+    "name": "Cart Testing",
+    "commands": [{
+      "id": "aebfafa7-a6d2-4d89-be4a-47178de580e9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63bf31a8-3c97-4605-ab5a-3ecf96084524",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(.,'Побутова техніка')]",
+      "targets": [
+        ["linkText=Побутова техніка", "linkText"],
+        ["css=.mm__item:nth-child(4) > .mm__a", "css:finder"],
+        ["xpath=//div[@id='js-menu-wrapper']/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://allo.ua/ua/bytovaya-tehnika/')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Побутова техніка')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae31665f-66f2-4099-b9ac-26a74ed4bd01",
+      "comment": "",
+      "command": "click",
+      "target": "css=.portal-group__item:nth-child(2) .portal-group__title-link",
+      "targets": [
+        ["linkText=Велика побутова", "linkText"],
+        ["css=.portal-group__item:nth-child(2) .portal-group__title-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Велика побутова')]", "xpath:link"],
+        ["xpath=//div[@id='__layout']/div/div/div[2]/div[2]/div[2]/ul/li[2]/h2/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://allo.ua/ua/krupnobytovaja-tehnika/')])[5]", "xpath:href"],
+        ["xpath=//li[2]/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Велика побутова')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "23d0fd43-8124-4782-8735-b039c8e32632",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(@href, 'https://allo.ua/ua/holodilniki/')])[5]",
+      "targets": [
+        ["css=.portal-group__item:nth-child(1) .portal-group__title-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Холодильники')])[4]", "xpath:link"],
+        ["xpath=//div[@id='__layout']/div/div/div[2]/div[2]/div[2]/ul/li/h2/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://allo.ua/ua/holodilniki/')])[5]", "xpath:href"],
+        ["xpath=//h2/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a3ca4d9-ecfc-498a-a667-d9260c38e75b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.products-layout__item:nth-child(1) .v-btn--cart",
+      "targets": [
+        ["css=.products-layout__item:nth-child(1) .v-btn--cart", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div/div[3]/div/div[2]/div[2]/div/div/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Купити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "be95ac62-e647-433b-a101-476462ed461f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.v-modal__mask",
+      "targets": [
+        ["css=.v-modal__mask", "css:finder"],
+        ["xpath=//body/div[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1891e699-cdba-480a-8f3b-3991cee132a0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/footer/button",
+      "targets": [
+        ["css=.comeback", "css:finder"],
+        ["xpath=//div/footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Продовжити вибір товарів')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ad923cb-ee83-40d7-9a9e-e919513107e2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='__layout']/div/div/div[3]/div/div[2]/div[2]/div[4]/div/div[3]/div[2]/button",
+      "targets": [
+        ["css=.products-layout__item:nth-child(4) .v-btn--cart", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='__layout']/div/div/div[3]/div/div[2]/div[2]/div[4]/div/div[3]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[3]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17df31c7-afe3-4620-bf9a-9b8652379050",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.v-modal__mask",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "826890ba-0d72-4be6-a956-ae9dc9379c48",
+      "comment": "",
+      "command": "click",
+      "target": "css=.products_list_item:nth-child(1) .title > .vi",
+      "targets": [
+        ["css=.products_list_item:nth-child(1) .title > .vi", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e16662e-bed8-4e7b-b5ea-ae96d8243ac8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.remove > use",
+      "targets": [
+        ["css=.remove > use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "527999a0-5fa7-4273-b3ad-cdc45a1bf31d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[contains(@href, 'https://allo.ua/ua/')])[1410]",
+      "targets": [
+        ["linkText=сюди", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'сюди')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://allo.ua/ua/')])[1410]", "xpath:href"],
+        ["xpath=//p[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'сюди')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5ef6cb4e-82f0-4de9-bcc2-d4e144eb48ac",
+    "name": "Test Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://rozetka.com.ua/ua/", "https://allo.ua/"],
+  "plugins": []
+}
